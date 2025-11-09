@@ -23,10 +23,13 @@ git clone https://github.com/mragilsa/library-management-system.git
 ```
 cd library-management-system
 ```
+Open the project in your preferred IDE to inspect and run the code.
+
 ### 2. Database
-- Schema provided in /resources/db/schema.sql
-- Create database libraryhub_db in MySQL
-- Spring Boot will initialize tables automatically
+- Copy the schema file src/main/resources/db/schema.sql to create the database.
+- Create a new database libraryhub_db in MySQL using the schema.
+- Spring Boot will automatically initialize tables and manage connections based on application.properties.
+
 
 ### 3. Configure application.properties
 Check and update database connection in src/main/resources/application.properties:
@@ -48,7 +51,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-Access the app at: http://localhost:8080
+Access the app at: http://localhost:8080/swagger-ui/index.html
 
 ---
 
@@ -62,4 +65,13 @@ Access the app at: http://localhost:8080
 
 For full API documentation, check Swagger UI:
 http://localhost:8080/swagger-ui/index.html
+
+## Note
+
+Default admin credentials for login:
+
+- **Username:** `admin`
+- **Password:** `Admin123`
+
+Use these to access admin features and stats in the dashboard.
 
