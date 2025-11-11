@@ -66,6 +66,8 @@ Access the app at: http://localhost:8080/swagger-ui/index.html
 For full API documentation, check Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 
+---
+
 ## Note
 
 Default admin credentials for login:
